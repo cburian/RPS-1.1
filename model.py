@@ -27,7 +27,7 @@ class UserInterface:
     #     print(message)
 
     @staticmethod
-    def make_menu(menu_data: list[tuple]) -> dict:
+    def make_menu(menu_data: list) -> dict:
         """
 
         Args:
@@ -75,9 +75,9 @@ class UserInterface:
             return menu_dict
 
     @staticmethod
-    def show_menu(self, menu_dict) -> None:
-        for i in menu_dict:
-            print(f"({i}) {menu_dict[i]['label']}")
+    def show_menu(menu_dict: dict) -> None:
+        for k in menu_dict.keys():
+            print(f"({k}) {menu_dict[k]['label']}")
 
     @staticmethod
     def validate_input(choice_options):
