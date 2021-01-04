@@ -83,7 +83,3 @@ class UserInterface:
 
             except ValueError:
                 self.notify_user("Only numbers allowed!")
-
-
-
-    
